@@ -1,3 +1,21 @@
+Reference:
+   https://pypi.org/project/chess/
+
+import chess; print(chess)
+   /home/smalinux/.local/lib/python3.8/site-packages/chess/__init__.py
+
+
+https://python-chess.readthedocs.io/en/v1.6.1/index.html
+===============================================================================
+??
+   IPython/Jupyter Notebook integration. SVG rendering docs.
+
+??
+   Chess variants: Standard, Chess960, Suicide, Giveaway, Atomic, King of the Hill, Racing Kings, Horde, Three-check, Crazyhouse. Variant docs.
+
+
+Selenium
+
 You may consider using virtualenv to create isolated Python environments. Python 3 has venv which is almost the same as virtualenv. ??
 - https://selenium-python.readthedocs.io/installation.html
 
