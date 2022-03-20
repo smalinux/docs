@@ -1,0 +1,14 @@
+# What libs are REALLY linked against my exec file?
+$ ldd execsnoop
+    linux-vdso.so.1 (0x00007ffe827e9000)
+    libelf.so.1 => /lib/x86_64-linux-gnu/libelf.so.1 (0x00007f86382bb000)
+    libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f863829f000)
+    libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f8638077000)
+    /lib64/ld-linux-x86-64.so.2 (0x00007f8638351000)
+
+
+# Is this symbol REALLY exist in my installed lib?
+$ grep -l gelf_getshdr /usr/lib/x86_64-linux-gnu/libelf.*
+    /usr/lib/x86_64-linux-gnu/libelf.a
+    /usr/lib/x86_64-linux-gnu/libelf.so
+    /usr/lib/x86_64-linux-gnu/libelf.so.1
