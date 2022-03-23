@@ -1,0 +1,35 @@
+# Tragedy story about upgrading libbpf manually:
+
+1. I should know all libbpf places in my system:
+
+    $ find / -name "libbpf.so*" 2> /dev/null
+    $ find / -name "libbpf.pc" 2> /dev/null
+
+    now you can sudo rm all these files or at least mv to a backup place.
+    ex:
+        $ rm /lib/x86_64-linux-gnu/libbpf.*
+
+2. Is bpftool also up-to-date?
+
+    cd linux-stable/tools/bpf && make && make install
+
+3. compile and install libbpf for linux source tree:
+
+    cd linux-stable/tools/lib/bpf/
+    make
+    make install
+
+    IMPORTANT! libbpf get installed by default in /usr/local/lib64/
+    i don't need that so:
+    sudo cp -r /usr/local/lib64/* /usr/lib/x86_64-linux-gnu/
+
+    this place is the master! you should have libbpf here!
+        /usr/lib/x86_64-linux-gnu
+
+    All headers here:
+        /usr/local/include/bpf/btf.h
+
+4. make sure that this file is up-to-date! IMPORTANT because there is no script
+will update that automatically: ./usr/include/linux/btf.h
+
+    $ cp ~/repos/linux-stable/usr/include/linux/btf.h /usr/include/linux/
