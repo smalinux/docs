@@ -14,6 +14,9 @@ $ grep -l gelf_getshdr /usr/lib/x86_64-linux-gnu/libelf.*
     /usr/lib/x86_64-linux-gnu/libelf.so.1
 
 
+System Programming:
+https://stackoverflow.com/q/12591074/5688267
+
 
 # Awesome c tools
 https://github.com/3proxy/3proxy
