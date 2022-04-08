@@ -1,0 +1,12 @@
+BPF ring buffer (ringbuf). It is a multi-producer, single-consumer (MPSC) queue and can be safely shared across multiple CPUs simultaneously.
+
+BPF ringbuf support a familiar functionality from BPF perfbuf:
+
+variable-length data records;
+ability to efficiently read data from user-space through memory-mapped region without extra memory copying and/or syscalls into the kernel;
+both epoll notifications support, as well as an ability to busy-loop for the absolutely minimal latency.
+At the same time, BPF ringbuf solves the following issues with BPF perfbuf:
+
+memory overhead;
+data ordering;
+wasted work and extra data copying.
