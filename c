@@ -44,3 +44,10 @@ https://github.com/cgdb/cgdb
 . dump_stack & Htop CRT_handleSIGSEGV for c tags -_-
 . ack & rg
 . ctags
+
+#👉 macros is evil
+# feeh code bases kteer btwld functions bel macros. law el author shreer
+# mabyktbsh esm el functions ele btetwld fel comment am law dwrt mesh 7atla2ee
+# 3'eer el callsites we mesh 7atla2ee el definition mazkoora fe ay mkan :))
+$ rg '##\w+\(' /usr/src/linux
+
