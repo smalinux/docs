@@ -24,6 +24,8 @@ https://stackoverflow.com/q/12591074/5688267
 . cgdb (using ncurses)
 . gdb TUI
 
+#👉 C language Profilers
+https://stackoverflow.com/q/1794816/5688267
 
 #👉 Awesome c tools
 https://github.com/3proxy/3proxy
@@ -32,6 +34,7 @@ https://github.com/git/git
 https://github.com/mcuelenaere/fsv
 #https://github.com/pengutronix/genimage
 https://github.com/cgdb/cgdb
+
 
 #👉 code navigation
 . dump_stack & Htop CRT_handleSIGSEGV for c tags -_-
