@@ -32,4 +32,4 @@
 4. make sure that this file is up-to-date! IMPORTANT because there is no script
 will update that automatically: ./usr/include/linux/btf.h
 
-    $ cp ~/repos/linux-stable/usr/include/linux/btf.h /usr/include/linux/
+    $ cp ~/repos/linux-stable/include/uapi/linux/btf.h /usr/include/linux/
