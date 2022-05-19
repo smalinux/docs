@@ -1,3 +1,4 @@
+# my lovely & quick shortcut
 :G one
 
 :Gedit
@@ -7,6 +8,8 @@
 
 # get current commit you are above it:
 :G log -n 1
+or
+:G one -n 1
 
 ls
 ls
