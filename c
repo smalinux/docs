@@ -31,7 +31,7 @@ https://stackoverflow.com/q/1794816/5688267
 .
 .
 
-#👉 Awesome c tools
+#👉 Awesome c tools - nice to read & study them line by line
 https://github.com/3proxy/3proxy
 https://github.com/stevenhoneyman/l3afpad
 https://github.com/git/git

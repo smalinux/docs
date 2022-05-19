@@ -1,0 +1,14 @@
+:G one
+
+:Gedit
+
+:Gdiffsplit
+
+
+# get current commit you are above it:
+:G log -n 1
+
+ls
+ls
+
+
