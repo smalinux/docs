@@ -39,6 +39,7 @@ https://github.com/mcuelenaere/fsv
 #https://github.com/pengutronix/genimage
 https://github.com/cgdb/cgdb
 https://github.com/sysstat/sysstat
+https://github.com/WayneD/rsync/
 
 
 #👉 code navigation
