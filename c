@@ -53,3 +53,19 @@ https://github.com/WayneD/rsync/
 # 3'eer el callsites we mesh 7atla2ee el definition mazkoora fe ay mkan :))
 $ rg '##\w+\(' /usr/src/linux
 
+
+# Use designated initializers whenever possible.
+# https://github.com/performancecopilot/pcp/commit/ef9161584a9481599d271734b08c5afc8be41989
+metrics[COMM] = (struct pmdaMetric)
+- { /* m_user */ NULL,
+-  { /* m_desc */
+-      PMDA_PMID(cluster_id, 0), PM_TYPE_STRING, indom_id_mapping[EXECSNOOP_INDOM],
+-      PM_SEM_INSTANT, PMDA_PMUNITS(0, 0, 0, 0, 0, 0)
++  .m_desc = {
++      .pmid  = PMDA_PMID(cluster_id, 0),
++      .type  = PM_TYPE_STRING,
++      .indom = indom_id_mapping[EXECSNOOP_INDOM],
++      .sem   = PM_SEM_INSTANT,
++      .units = PMDA_PMUNITS(0, 0, 0, 0, 0, 0),
++  }
+};
